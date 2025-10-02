@@ -1,25 +1,16 @@
-fetch('/api/data')
+const city = "Chicago"; // Could make dynamic with user input
+fetch(`/api/data/${city}`)
     .then(response => response.json())
     .then(data => {
-        const cities = Object.keys(data.air_quality);
         const airValues = Object.values(data.air_quality);
-        const waterValues = Object.values(data.water_usage);
+        const airLabels = Object.keys(data.air_quality);
 
-        var trace1 = {
-            x: cities,
+        const trace = {
+            x: airLabels,
             y: airValues,
-            name: 'Air Quality',
-            type: 'bar'
+            type: 'bar',
+            name: 'Air Quality'
         };
 
-        var trace2 = {
-            x: cities,
-            y: waterValues,
-            name: 'Water Usage',
-            type: 'bar'
-        };
-
-        var chartData = [trace1, trace2];
-
-        Plotly.newPlot('charts', chartData, {barmode: 'group'});
+        Plotly.newPlot('charts', [trace], {title: `Air Quality in ${city}`});
     });

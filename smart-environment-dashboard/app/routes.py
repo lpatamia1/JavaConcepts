@@ -1,18 +1,16 @@
 from flask import Blueprint, render_template, jsonify
-import json
-import pandas as pd
+from .api import fetch_all_data
 
 main = Blueprint('main', __name__)
 
-# Load mock data
-with open('data/mock_data.json') as f:
-    env_data = json.load(f)
-
 @main.route('/')
 def index():
-    # Example: pass data to template
-    return render_template('index.html', data=env_data)
+    # Fetch real-time data for default city
+    data = fetch_all_data("Chicago")
+    return render_template('index.html', data=data)
 
-@main.route('/api/data')
-def api_data():
-    return jsonify(env_data)
+@main.route('/api/data/<city>')
+def api_data(city):
+    # Return JSON for any city
+    data = fetch_all_data(city)
+    return jsonify(data)

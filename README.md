@@ -21,6 +21,25 @@ This project provides practical examples of core **Java principles** with simple
 
 ---
 
+## 📚 Data Structures  
+
+- **Linked List**  
+  *Example:* `LinkedListExample.java` – custom implementation of a singly linked list.  
+
+- **Stack**  
+  *Example:* `StackExample.java` – push, pop, and peek operations using both arrays and `Deque`.  
+
+- **Queue**  
+  *Example:* `QueueExample.java` – FIFO operations implemented with `LinkedList`.  
+
+- **Binary Search Tree (BST)**  
+  *Example:* `BinarySearchTreeExample.java` – insert, search, and in-order traversal of nodes.  
+
+- **HashMap Usage**  
+  *Example:* `HashMapExample.java` – demonstrates storing and retrieving key-value pairs efficiently.  
+
+---
+
 ## ▶️ How to Run  
 
 Each example can be compiled and executed from the **root directory** of the project using the command line.  
@@ -33,7 +52,3 @@ javac com/java_journey/concepts/PaymentProcessingExample.java
 
 # Run using the fully qualified class name
 java com.java_journey.concepts.PaymentProcessingExample  
-
----
-
-✨ Explore these examples to strengthen your understanding of **Java OOP and core concepts**.  

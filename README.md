@@ -4,38 +4,38 @@ This project provides practical examples of core **Java principles** with simple
 
 ## 🔑 Core Concepts  
 
-- **Polymorphism**  
+- **Polymorphism** *(Intermediate)*  
   *Example:* `PaymentProcessingExample.java` – demonstrates interfaces and multiple implementations.  
 
-- **Encapsulation**  
+- **Encapsulation** *(Beginner)*  
   *Example:* `BankAccount` class – protects its fields and enforces controlled access.  
 
-- **Inheritance & Abstraction**  
+- **Inheritance & Abstraction** *(Intermediate)*  
   *Example:* `Vehicle` hierarchy – shows how subclasses inherit behavior and implement abstract methods.  
 
-- **Collections Framework**  
+- **Collections Framework** *(Intermediate)*  
   *Examples:* Use of `List`, `Set`, and `Map` to manage groups of objects efficiently.  
 
-- **Exception Handling**  
+- **Exception Handling** *(Beginner)*  
   *Example:* Demonstrates `try-catch-finally` blocks for robust error handling.   
 
 ---
 
 ## 📚 Data Structures  
 
-- **Linked List**  
+- **Linked List** *(Intermediate)*  
   *Example:* `LinkedListExample.java` – custom implementation of a singly linked list.  
 
-- **Stack**  
+- **Stack** *(Beginner)*  
   *Example:* `StackExample.java` – push, pop, and peek operations using both arrays and `Deque`.  
 
-- **Queue**  
+- **Queue** *(Beginner)*  
   *Example:* `QueueExample.java` – FIFO operations implemented with `LinkedList`.  
 
-- **Binary Search Tree (BST)**  
+- **Binary Search Tree (BST)** *(Advanced)*  
   *Example:* `BinarySearchTreeExample.java` – insert, search, and in-order traversal of nodes.  
 
-- **HashMap Usage**  
+- **HashMap Usage** *(Intermediate)*  
   *Example:* `HashMapExample.java` – demonstrates storing and retrieving key-value pairs efficiently.  
 
 ---

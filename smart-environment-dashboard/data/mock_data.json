@@ -1,0 +1,5 @@
+{
+    "air_quality": {"Chicago": 42, "Seattle": 35},
+    "water_usage": {"Chicago": 120, "Seattle": 98},
+    "food_sustainability": {"Chicago": 70, "Seattle": 80}
+}
